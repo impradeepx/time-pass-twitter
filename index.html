@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Twitter Clone</h1>
+        <form action="post_tweet.php" method="post">
+            <textarea name="tweet" id="tweet" placeholder="What's on your mind?"></textarea>
+            <button type="submit">Tweet</button>
+        </form>
+        <div class="tweets">
+            <?php include 'display_tweets.php'; ?>
+        </div>
+    </div>
+</body>
+</html>
